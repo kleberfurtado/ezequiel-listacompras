@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 
-#main {
+#campoNomeProduto {
   border-radius: 10px;
   outline: none;
   width: 430px;
@@ -19,10 +20,6 @@ body {
   position: absolute;
 }
 
-.list {
-  display: inline-block;
-  position: relative;
-}
 
 .click{
   background: #0066A2;
@@ -33,4 +30,23 @@ body {
   width: 89px;
   font: bold 15px arial, sans-serif;
   text-shadow: none;
+  margin: 28px;
   }
+
+#total {  
+  padding-right: 77vh;
+  float: right;
+  color: #312db3;
+  font-size: 22px;
+  font: bold 22px arial, sans-serif;
+}
+
+.quadro-direito {
+  color: #312db3;
+  font-size: 22px;
+  float: right;
+}
+
+#lista-itens {
+  list-style-type: none;
+}

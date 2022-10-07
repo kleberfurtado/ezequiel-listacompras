@@ -7,34 +7,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Lista de Compras</title>
 </head>
 <body>
   <div class="primary">
     <div class="list">
-        <input type="text" id="main" placeholder="produto">
-        <div class="botão">
+      <div class="personalizado">
+        <input type="text" id="campoNomeProduto" placeholder="Coloque aqui seu Produto">  <!-- input - escrever(dependendo do type) -->
+      </div>
+      <div class="botão">
         
       <br /> <!-- espaçamento  -->
         
-       <button onclick="InserirElemento()" type="submit"  class="click">
+       <button onclick="inserirElemento()" type="submit"  class="click">
            Inserir
      </button>
         </div>
-        
-        <br> <!-- espaçamento  -->
-        
 
-           <div>
-              <input type="checkbox">
-                 <label for="bolacha">Bolacha</label>
-                   <input type="checkbox">
-                   <label for="manteiga">Manteiga</label>
-                   <input type="checkbox">
-                   <label for="ovo">Ovo</label>
-                   <input type="checkbox">
-                   <label for="pasta-de-amendoim">Pasta de Amendoim</label>
-                </div>
+          <div class="quadro-direito">
+            <label for="Valor"> Valor Total: </label>
+            <div>R$</div>
+            <span id="total">0.00</span>
+          </div>
+
+
+            <ul id="listaItens" marcarSelecionado()>
+            </ul>
 
         </div>
     </div>
